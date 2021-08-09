@@ -1,0 +1,97 @@
+@media only screen and (max-width: 1200px) {
+   
+}
+
+@media only screen and (max-width: 1023px) {
+   #aboutus h3 {font-size: 1.35rem;}
+}
+
+@media only screen and (max-width: 990px) {
+    #aboutus h3 {font-size: 1.2rem;}
+    .container-services { padding: 0;}
+    #process h3 {font-size: 1.5rem;}
+    #process .number {
+        font-size: 36px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }    
+    .container-process { padding-right:0;}
+
+    p.text-team {font-size: 0.9rem;}
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {font-size: 2.5rem;}
+}
+
+@media only screen and (max-width: 767px) {
+    #aboutus h3 {      
+        position: static;        
+        transform: translate(0, 0);
+    }
+
+    .img-aboutus {
+        padding: 2% 10%;       
+    }
+
+    .first-img-aboutus{ 
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 2%;
+    }
+
+    .third-img-aboutus {
+        margin-top: 0;
+    }
+
+    .container-services { padding: 0.5rem 3rem;}
+
+    #process h3 {font-size: 1.75rem;}
+
+    .container-process {         
+        padding-top: 0;        
+    }
+    
+    p.text-team {font-size: 1rem;}
+}
+
+@media only screen and (max-width: 420px) {
+     h1 {        
+        font-size: 2rem;               
+    }
+}
+
+@media only screen and (max-width: 370px) {   
+    a.bt-hero-full:after {    
+        content: "SERVICII";        
+    }
+
+    a.bt-hero-border:after { 
+        content: "PROIECTE";
+    }
+}
+
+@media only screen and (max-height: 420px) { 
+    h1 { 
+        font-size: 2rem;
+        /* margin-bottom: 1.5rem!important;}  */
+    }   
+    /* .container-slide {
+        margin-bottom: 70px!important;
+    }  */
+
+    .quote-slide1 {
+        display:none;
+    }
+    .quote-slide2 {
+        display:none;
+    }
+}
+
+@media only screen and (max-height: 400px) {       
+    .container-slide {
+        margin-bottom: 90px!important;
+    } 
+}

@@ -1,0 +1,482 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;       
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+h2,h3 {
+    font-weight: 500;   
+}
+
+h3 {
+    font-weight: 500;    
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #acb338;
+    content:'';
+    width: 80px; 
+    margin-top: 15px;
+    margin-bottom: 10px;    
+}
+
+h4 {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+.bg-yellow {
+    background-color: #acb338;
+
+}
+
+.bg-turquoise {
+    background-color: #123f3b;
+}
+
+.company-name {    
+    color: #acb338;
+    font-size:1.1rem;
+    font-weight: bold;
+}
+
+.bg-section{
+    background: linear-gradient( rgba(18,63, 59, 0.5), rgba(0, 0, 0, 0.8)),
+    url('../images/fancy-pants.jpg') ;
+    background-size: cover;
+}
+
+.fa-facebook-f:hover {
+    color: #3b5998;           
+}
+
+.fa-twitter:hover {
+    color: #00aced;    
+}
+.fa-google-plus-g:hover {
+    color: #dd4b39;    
+}
+
+.fa-instagram:hover {
+    color: #517fa4;    
+}
+
+
+/* Start Navbar */
+
+.nav-link {
+    color: #142222;
+}
+
+.nav-link:hover {
+    color: #acb338;
+}
+
+.navbar-brand, .navbar-brand:hover {
+    color: white;
+    font-size: 1.8rem;
+}
+
+nav{
+    transition: .4s;
+}
+
+.bg-white .nav-link:hover{
+    color: #acb338;
+}
+
+.bg-white .navbar-brand{
+    color: #142222;
+}
+
+/* menu hamburger */
+
+.hamburger-inner, 
+.hamburger-inner:after, 
+.hamburger-inner:before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    transition-timing-function: ease;
+    transition-duration: .15s;
+    transition-property: transform;
+    border-radius: 4px;
+    background-color: #acb338;
+}
+
+.bg-white .hamburger-inner, 
+.bg-white .hamburger-inner:after, 
+.bg-white .hamburger-inner:before {
+    background-color: #acb338;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner:after,
+.hamburger.is-active .hamburger-inner:before {
+    background-color: #acb338;
+}
+
+button:focus { outline: 0; }
+
+.bg-white-trans {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar.bg-white {
+     box-shadow: 0px 12px 22px -12px rgba(20,34,34,0.5);
+    -webkit-box-shadow: 0px 12px 22px -12px rgba(20,34,34,0.5);
+    -moz-box-shadow: 0px 12px 22px -12px rgba(20,34,34,0.5);    
+}
+
+/* End Navbar */
+
+/* Start Carousel Hero image */
+.bg-slide-1 {
+    background: 
+    linear-gradient(35deg, rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.4)),
+    url('../images/slide-1.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-slide-2{
+    background: 
+    linear-gradient(15deg, rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.4)),
+    url('../images/slide-2.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-slide-3{
+    background: 
+    linear-gradient(15deg, rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.4)),
+    url('../images/slide-3.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
+#hero a {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+}
+
+ a.bt-hero-full {
+    background-color: #acb338;
+    color: #142222;    
+    padding: 16px; 
+    transition: 1s;   
+}
+a.bt-hero-full:after {    
+    content: "SERVICIILE NOASTRE";        
+}
+
+a.bt-hero-full:hover { 
+    background-color: #123f3b;    
+    color: #fff;
+}
+
+a.bt-hero-border {    
+    background-color: #142222;
+    border: solid 2px #acb338;
+    color: #fff;    
+    padding: 14px; 
+    transition: 1s;     
+}
+
+a.bt-hero-border:after { 
+    content: "ULTIMELE PROIECTE";
+}
+
+a.bt-hero-border:hover { 
+    background-color: #123f3b;
+    border: solid 2px #123f3b;
+}
+/* End Carousel Hero image*/
+
+/* Start About us */
+ .button-yellow {
+    background-color: #acb338;
+    color: #142222;    
+    padding: 16px;               
+}
+
+.text-yellow {
+    color: #acb338;
+}
+
+#aboutus h3 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.first-img-aboutus{ padding-left: 1.5rem;}
+
+.third-img-aboutus {margin-top: 1rem;}
+/* End About us */
+
+
+/* Start portfolio */
+.work {
+    transition: .4s;
+}
+
+.work:hover {
+    transform: scale(1.2);
+    border-radius: 20px;
+}
+/* End Portfolio */
+
+/* Start Services */
+
+.bg-section-services {
+    background: linear-gradient( rgba(11, 39, 37, 1), rgba(0, 0, 0, 1));    
+}
+
+.container-services { padding: 1.5rem;}
+
+/* End Services */
+
+/* Start Process */
+#process .box-bg {
+    transition: .4s;
+    display: flex;    
+}
+
+#process .box-bg:hover {      
+    box-shadow: 0 20px 38px -12px rgba(0, 0, 0, 0.09);
+}
+
+#process .number {     
+    font-size: 45px;
+    color: #ffffff;      
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    background-color: #acb338; 
+    text-align: center;  
+    margin-right: 8px;      
+    text-shadow: 0px 0px 20px #404040;  
+    transition: 2s;
+}
+
+#process .box-bg:hover .number {     
+    transform: rotate(360deg);
+}
+
+#process .line {
+    font-size:2.5rem;
+    color:#acb338;    
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    justify-content: center;
+}
+
+  #process .line::before, 
+  #process .line::after
+ {
+    display: block;
+    content: "";
+    width: 30%;
+    height: 1px;
+    background-color: #acb338;        
+}    
+
+#process .line::after{
+    margin-left: 5%;
+}
+
+#process .line::before {
+    margin-right: 5%;
+} 
+
+.container-process { 
+    padding-right: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+/* Start Portfolio */
+
+#portfolio .box-bg {
+    transition: .4s;       
+}
+
+#portfolio .box-bg:hover {      
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container-portfolio {
+    padding: 15px;
+}
+/* End Process */
+
+/* Start Quote */
+
+/* End Quote */
+#quote p:first-child {
+    font-size: 1.6rem;
+}
+
+#quote p:last-child {
+    font-size: 1.2rem;
+}
+
+/* Start Team */
+
+#team .social-links-team {
+    padding: 0;
+}
+
+#team .social-links-team li {
+    display: inline-block;
+    margin-right: 18px;
+    list-style: none;
+}
+
+#team .social-links-team li:last-child {    
+    margin-right: 0;    
+}
+
+#team .social-links-team li a {    
+    text-decoration: none;    
+    color: #fff;
+    
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s;
+}
+  
+#team .fa-facebook-f,
+#team .fa-twitter,
+#team .fa-google-plus-g,
+#team .fa-instagram {
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    background-color: #acb338;
+    border-radius: 50%;
+    line-height: 30px;
+}
+
+.image-team {
+    opacity: 1;
+    transition: .5s ;    
+}
+
+.hover-text-team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    background: linear-gradient( rgba(13, 46, 43, 0.8), rgba(0, 0, 0, 0.8));      
+}
+
+.text-team {
+    color: #ffffff;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .container-team:hover .hover-text-team {
+    opacity: 1;  
+  }  
+ 
+/* End Team */
+
+/*  Start Contact */
+#contact i {
+    background-color: #acb338;
+    border-radius: 50%; 
+    color: #fff;
+    line-height: 2.5rem;
+    height: 2.5rem;    
+    text-align: center;    
+    width: 2.5rem;
+    transition: .4s;   
+}
+
+#contact .media:hover  i {
+    transform: scale(1.2);
+}
+
+#contact form a {
+    text-decoration: underline;
+    color: #123f3b;
+}
+/* End Contact */
+
+/* Start Footer */
+    footer{    
+        background: linear-gradient( rgba(11, 39, 37, 0.4), rgba(0, 0, 0, 0.9)),
+        url('../images/fancy-pants.jpg') ;
+        background-size: cover;
+        color: #ffffffb2;
+        font-weight: 300;    
+    }
+
+    footer .social-links li {
+        display: inline-block;
+        margin-right: 25px;
+        list-style: none;
+    }
+
+    footer .social-links li a {
+        display: inline-block;
+        text-decoration: none;
+        border: 0;
+        color: #fff;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+    }
+    
+    footer .social-links li a:hover {
+        transform: scale(1.5);        
+    }
+       
+    footer .fa-facebook-f,
+    footer .fa-twitter,
+    footer .fa-google-plus-g,
+    footer .fa-instagram {
+        -webkit-transition: color 0.2s;
+        transition: color 0.2s;
+        font-size: 150%;        
+    }    
+
+/* End Footer */
+

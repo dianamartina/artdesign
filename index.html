@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!-- Favicon -->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -25,31 +26,28 @@
     <link rel="manifest" href="favicon/manifest.json">
     <!-- <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">  -->
 
-    <title>ArtDesign</title>
+    <!-- Library CSS Bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <!-- Library CSS Bootstrap4 -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Library Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
-    <!-- Efect AOS -->
+    <!-- Effect AOS -->
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/aos.css">
     <!-- Start tasty hamburgers -->
     <link rel="stylesheet" href="css/hamburgers.min.css">
-    <!-- Start Owl Carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
 
     <!-- Style  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
 
+    <title>ArtDesign</title>
 </head>
 
 <body>
@@ -91,54 +89,70 @@
     </nav>
     <!-- End Navbar -->
 
-    <!-- Start Carousel Hero image -->
-    <section id="hero" class="owl-carousel owl-theme text-white">
-        <!-- start slide 1 -->
-        <section class="bg-slide-1 text-left">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="container-slide col-12  my-auto ">
-                        <h1 class="mb-3"> Design interior, <br>solutii creative,<br>
-                            idei creative
-                        </h1>
-                        <h4 class="quote-slide1 mb-5">"Cu peste 10 ani de experienta putem sa-ti oferim cele mai bune
-                            solutii"
-                        </h4>
-                        <a href="#services" class="bt-hero-full mr-3 rounded"></a>
+    <!-- Start Carousel Bootstrap5 Hero image -->
+    <div id="carouselExampleCaptions" class="carousel slide hero-carousel" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/slide-1.jpg" class="d-block w-100 img-hero-carousel" alt="hero image 1">
+                <div class="carousel-caption d-inline-flex flex-column justify-content-center h-75 ">
+                    <h1 class="mb-3 heading-primary "> Design interior, <br>solutii creative,<br>
+                        idei creative
+                    </h1>
+                    <h4 class="heading-forth quote-slide1 mb-5">"Cu peste 10 ani de experienta putem sa-ti oferim cele
+                        mai bune
+                        solutii"
+                    </h4>
+                    <div>
+                        <a href="#services" class="bt-hero-full me-3 rounded"></a>
                         <a href="#portfolio" class="bt-hero-border rounded"></a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end slide 1 -->
-
-        <!-- start slide 2 -->
-        <section class="bg-slide-2 text-right">
-            <div class="container h-100">
-                <div class="row h-100">
-                    <div class="container-slide col-12 my-auto ">
-                        <h1 class="mb-3"> Da viata <br>casei tale de vis</h1>
-                        <h4 class="quote-slide2 mb-5 ">
-                            "Perfectiunea se atinge, nu cand nu mai este nimic de adaugat, <br> ci atunci cand nu mai
-                            este nimic de indepartat"<br>
-                            Antoine de Saint – Exupery
-                        </h4>
-                        <a href="#services" class="bt-hero-full mr-3 rounded"></a>
+            <div class="carousel-item">
+                <img src="images/slide-2.jpg" class="d-block w-100 img-hero-carousel" alt="hero image 2">
+                <div class="carousel-caption d-inline-flex flex-column justify-content-center h-75 ">
+                    <h2 class="mb-3 heading-primary "> Da viata <br>casei tale de vis</h2>
+                    <h4 class="heading-forth quote-slide2 mb-5 ">
+                        "Perfectiunea se atinge, nu cand nu mai este nimic de adaugat, <br> ci atunci cand nu
+                        mai
+                        este nimic de indepartat"<br>
+                        Antoine de Saint – Exupery
+                    </h4>
+                    <div>
+                        <a href="#services" class="bt-hero-full me-3 rounded"></a>
                         <a href="#portfolio" class="bt-hero-border rounded "></a>
                     </div>
                 </div>
+
             </div>
-        </section>
-        <!-- end slide 2 -->
-    </section>
-    <!-- End Carousel Hero image -->
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel Bootstrap5 Hero image -->
 
     <!-- Start About us -->
     <section id="aboutus" class="bg_aboutus py-5">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6">
-                    <h2 class="mb-5">BINE ATI VENIT LA <span class="text-yellow">ART Design</span></h2>
+                    <h2 class=" heading-secondary mb-5">BINE ATI VENIT LA <span class="text-yellow">ART Design</span>
+                    </h2>
                     <p>Echipa noastra este pasionata in a crea spatii exceptionale.</p>
                     <p><span class="company-name">ART Design</span> vine in spate cu cei 10 ani de experienta creand o
                         o atmosfera unica in caminul sau la businessul dvs.</p>
@@ -165,7 +179,7 @@
                         </div>
                         <div class="position-relative col-12 col-md-5 mt-2 py- button-yellow text-center"
                             data-aos="fade-right" data-aos-duration="1500">
-                            <h3>Servicii complete de design interior personalizate </h3>
+                            <h3 class="heading-tertiary">Servicii complete de design interior personalizate </h3>
                         </div>
                     </div>
                 </div>
@@ -179,16 +193,16 @@
         <div class="container ">
             <div class="row">
                 <div class="col-12 mb-5">
-                    <h2 class="text-uppercase text-white ">Serviciile pe care le oferim</h2>
+                    <h2 class="heading-secondary text-uppercase text-white ">Serviciile pe care le oferim</h2>
                     <p class="text-white">
                         "Suntem o echipa ce crede in excelenta, calitate si onestitate, creind interioare speciale."
                     </p>
                 </div>
                 <div class="col-12 col-md-4">
-                    <div class="mr-3 container-services">
+                    <div class="me-3 container-services">
                         <img src="images/services_1.jpg" alt="" class="img-fluid">
                         <div class="text-center">
-                            <h3 class="mt-4 text-yellow font-weight-normal">Design
+                            <h3 class="heading-tertiary mt-4 text-yellow font-weight-normal">Design
                                 <span class="text-white"> Rezidential</span>
                             </h3>
                             <p class="text-secondary">Amenajari pentru camine cu suflet</p>
@@ -196,10 +210,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 ">
-                    <div class="mr-3 container-services">
+                    <div class="me-3 container-services">
                         <img src="images/services_2.jpg" alt="" class="img-fluid">
                         <div class="text-center">
-                            <h3 class="mt-4 text-yellow font-weight-normal">Design
+                            <h3 class="heading-tertiary mt-4 text-yellow font-weight-normal">Design
 
                                 <span class="text-white"> Comercial</span>
                             </h3>
@@ -208,10 +222,10 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 ">
-                    <div class="mr-3 container-services">
+                    <div class="me-3 container-services">
                         <img src="images/services_3.jpg" alt="" class="img-fluid">
                         <div class="text-center">
-                            <h3 class="mt-4 text-yellow font-weight-normal">Design
+                            <h3 class="heading-tertiary mt-4 text-yellow font-weight-normal">Design
 
                                 <span class="text-white"> Industrial</span>
                             </h3>
@@ -229,13 +243,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class=" mb-5 text-uppercase "> Procesul de lucru</h2>
+                    <h2 class=" heading-secondary mb-5 text-uppercase "> Procesul de lucru</h2>
                 </div>
                 <div class="col-12 col-md-4" data-aos="fade-up" data-aos-delay="0">
                     <div class="container-process pl-2 box-bg">
                         <div class="number">&nbsp;&nbsp;1&nbsp;&nbsp;</div>
                         <div>
-                            <h3 class="mb-3 mt-4"> Stabilim o intalnire</h3>
+                            <h3 class="heading-tertiary mb-3 mt-4"> Stabilim o intalnire</h3>
                             <div class="line">
                                 <i class="fas fa-hands-helping "></i>
                             </div>
@@ -250,7 +264,7 @@
                     <div class="container-process pl-2 box-bg  ">
                         <div class="number">&nbsp;&nbsp;2&nbsp;&nbsp;</div>
                         <div>
-                            <h3 class="mb-3 mt-4">Incepem colaborarea</h3>
+                            <h3 class="heading-tertiary mb-3 mt-4">Incepem colaborarea</h3>
                             <div class="line">
                                 <i class="fas fa-user-friends "></i>
                             </div>
@@ -263,7 +277,7 @@
                     <div class="container-process pl-2 box-bg">
                         <div class="number">&nbsp;&nbsp;3&nbsp;&nbsp;</div>
                         <div>
-                            <h3 class="mb-3 mt-4">Realizam lucrarea</h3>
+                            <h3 class="heading-tertiary mb-3 mt-4">Realizam lucrarea</h3>
                             <div class="line">
                                 <i class="fas fa-people-carry "></i>
                             </div>
@@ -283,7 +297,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-12 mb-5">
-                    <h2 class="text-uppercase">Lucrarile noastre</h2>
+                    <h2 class="heading-secondary text-uppercase">Lucrarile noastre</h2>
                 </div>
                 <div class="col-12 col-md-4">
                     <div>
@@ -398,7 +412,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-12 mb-5">
-                    <h2 class=" text-uppercase">Cine suntem noi</h2>
+                    <h2 class="heading-secondary text-uppercase">Cine suntem noi</h2>
                 </div>
                 <div id="member1" class="col-12 col-sm-6 col-md-3 text-center">
                     <div class="container-team position-relative mb-3">
@@ -467,7 +481,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="mb-5">CONTACT</h2>
+                    <h2 class="heading-secondary mb-5">CONTACT</h2>
                 </div>
                 <div class="col-12 col-md-7 ">
                     <p>Suntem nerabdatori sa va ascultam si sa discutam despre ideile si proiectele dumneavoastra. </p>
@@ -478,23 +492,23 @@
                     <hr>
 
                     <div class="media mt-5 px-4 ">
-                        <i class="fa fa-envelope mt-1 mr-4"></i>
+                        <i class="fa fa-envelope mt-1 me-4"></i>
                         <div class="media-body">
-                            <h3>Email</h3>
+                            <h3 class="heading-tertiary">Email</h3>
                             <p>contact@artdesign.ro</p>
                         </div>
                     </div>
                     <div class="media px-4 ">
-                        <i class="fa fa-phone mt-1 mr-4 "></i>
+                        <i class="fa fa-phone mt-1 me-4 "></i>
                         <div class="media-body">
-                            <h3>Telefon</h3>
+                            <h3 class="heading-tertiary">Telefon</h3>
                             <p>xxxx999xx</p>
                         </div>
                     </div>
                     <div class="media  px-4 ">
-                        <i class="fa fa-map-marker mt-1 mr-4"></i>
+                        <i class="fa fa-map-marker mt-1 me-4"></i>
                         <div class="media-body">
-                            <h3>Adresa</h3>
+                            <h3 class="heading-tertiary">Adresa</h3>
                             <p>Bucuresti, Sector 2</p>
                         </div>
                     </div>
@@ -547,41 +561,25 @@
 
     <!-- End Footer -->
 
+    <!-- JavaScript Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-    <script src="js/owl.carousel.min.js"></script>
-
-    <script>
-        //  OWL CAROUSEL
-        $('.owl-carousel').owlCarousel({
-            autoplay: true,
-            autoplayTimeout: 3000,
-            autoplayHoverPause: true,
-            loop: true,
-            margin: 0,
-            nav: false,
-            dots: true,
-            // dotsEach: true,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                1500: {
-
-                    items: 1
-                },
-                1500: {
-                    items: 1
-                }
-            }
-        });
-    </script>
 
     <script>
         // START NAVBAR
@@ -638,7 +636,7 @@
     </script>
 
     <!-- EFFECT AOS  -->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/aos.js"></script>
     <script>
         AOS.init();

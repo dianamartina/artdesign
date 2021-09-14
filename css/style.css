@@ -91,7 +91,7 @@ a:hover {
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: #123f3b;
+  color: #fff;
   font-size: 1.6rem;
 }
 
@@ -415,10 +415,11 @@ a.bt-hero-border:hover {
   background-color: #acb338;
   border-radius: 50%;
   color: #fff;
-  line-height: 2.5rem;
-  height: 2.5rem;
+  line-height: 2.2rem;
+  height: 2.2rem;
   text-align: center;
-  width: 2.5rem;
+  width: 2.2rem;
+  margin-bottom: 0.5rem;
   transition: 0.4s;
 }
 
@@ -467,6 +468,15 @@ footer .fa-instagram {
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
   font-size: 150%;
+}
+
+.logo-DM {
+  height: 1.4rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 0.4rem;
+  opacity: 0.8;
 }
 
 /* End Footer */

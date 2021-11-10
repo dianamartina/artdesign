@@ -42,9 +42,6 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/aos.css">
 
-    <!-- Tasty hamburgers -->
-    <link rel="stylesheet" href="css/hamburgers.min.css">
-
     <!-- Style  -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/queries.css">
@@ -55,21 +52,16 @@
 <body>
     <header class="header">
         <!-- Start Navbar -->
-        <nav class="navbar pt-3 navbar-expand-sm fixed-top ">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo-ArtDesign.jpg" alt="ArtDesign" width="60">
                     Art<span class="text-yellow">Design</span></a>
-                <div role="button" class="navbar-toggler p-0 m-0 " data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <div class="hamburger p-0 m-0 hamburger--spin">
-                        <div class="hamburger-box">
-                            <div class="hamburger-inner"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto text-right pr-3">
                         <li class="nav-item active">
                             <a class="nav-link" href="#services">Servicii</a>
@@ -90,6 +82,11 @@
                 </div>
             </div>
         </nav>
+
+
+        <!-- /////////////////////////////////////////////////////////////////////////// -->
+
+
         <!-- End Navbar -->
     </header>
     <main class="main">
@@ -610,45 +607,31 @@
         });
 
         // SMOOTH SCROLL
+
+        const ccc = (event) => {
+            event.preventDefault();
+            var section = $(this).attr("href");
+            $('html, body').animate({
+                scrollTop: $(section).offset().top - 70
+            }, 700);
+        }
+
         $(function () {
             $(".nav-link").click(function (event) {
-                event.preventDefault();
-                var section = $(this).attr("href");
-                $('html, body').animate({
-                    scrollTop: $(section).offset().top - 70
-                }, 1000);
+                (event) => ccc(event);
             });
         });
 
         $(function () {
             $(".bt-hero-full").click(function (event) {
-                event.preventDefault();
-                var section = $(this).attr("href");
-                $('html, body').animate({
-                    scrollTop: $(section).offset().top - 70
-                }, 1000);
+                (event) => ccc(event);
             });
         });
 
         $(function () {
             $(".bt-hero-border").click(function (event) {
-                event.preventDefault();
-                var section = $(this).attr("href");
-                $('html, body').animate({
-                    scrollTop: $(section).offset().top - 70
-                }, 1000);
+                (event) => ccc(event);
             });
-        });
-    </script>
-
-
-    <!--  EFFECT HAMBURGER -->
-    <!-- Copyright (c) 2016 Jonathan Suh <hello@jonsuh.com> (jonsuh.com) -->
-    <script>
-        var $hamburger = $(".hamburger");
-        $hamburger.on("click", function (e) {
-            $hamburger.toggleClass("is-active");
-            $('nav').toggleClass('bg-white-trans');
         });
     </script>
 
